@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "import", "prettier", "unused-imports"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "camelcase": "off",
+    "no-plusplus": "off",
+    "react/prop-types": "off",
+    "no-restricted-properties": "off",
+    "no-unused-expressions": "off",
+    "no-unreachable": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "func-names": "off",
+    "import/no-cycle": "off",
+    "max-len": [2, { "code": 120, "tabWidth": 2, "ignoreUrls": true }],
+    "unused-imports/no-unused-imports": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "spaced-comment": ["error", "always", { "markers": ["/"] }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js",".jsx"]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

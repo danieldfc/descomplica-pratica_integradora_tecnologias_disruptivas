@@ -1,5 +1,5 @@
-import Header from "./components/header";
-import ListarTarefa from "./pages/tarefa/ListarTarefa";
+import Header from './components/header'
+import ListarTarefa from './pages/tarefa/ListarTarefa'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Header />
       <ListarTarefa />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
